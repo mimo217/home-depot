@@ -8,7 +8,7 @@ const checkToken = (req, res) => {
 }
 
 const dataController = {
-  async create (req, res, next) {
+  async create(req, res, next) {
     try {
       const user = await User.create(req.body)
       const isGuest = req.body.isGuest
@@ -25,7 +25,7 @@ const dataController = {
       res.status(400).json(e)
     }
   },
-  async login (req, res, next) {
+  async login(req, res, next) {
     try {
       const user = await User.findOne({ email: req.body.email })
       if (!user) throw new Error()
@@ -41,7 +41,7 @@ const dataController = {
 }
 
 const apiController = {
-  auth (req, res) {
+  auth(req, res) {
     res.json(res.locals.data.token)
   }
 }
@@ -49,7 +49,7 @@ const apiController = {
 
 /* -- Helper Functions -- */
 
-function createJWT (user) {
+function createJWT(user) {
   return jwt.sign(
     // data payload
     { user },

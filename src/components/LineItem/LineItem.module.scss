@@ -1,0 +1,28 @@
+.LineItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .align-ctr {
+    text-align: center;
+  }
+  
+  .btn-xs {
+    font-size: 16px;
+    padding: 2px 8px;
+    margin: 0 4px;
+  }
+  
+  .field {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .image {
+    max-width: 100px;
+    max-height: 100px;
+  }

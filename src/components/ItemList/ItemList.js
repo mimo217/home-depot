@@ -1,4 +1,4 @@
-import "./ItemList.css";
+import "./ItemList.module.scss";
 import ItemListItem from "../ItemListItem/ItemListItem";
 
 export default function ItemList({

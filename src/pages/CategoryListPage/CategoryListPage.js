@@ -1,9 +1,9 @@
-import "./styles.scss";
+import "../../scss/styles.scss";
 import { useState } from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import CategoryList from "../../components/CategoryList/CategoryList";
 
-export default function App() {
+export default function CategoryListPage() {
   const [drop, setDrop] = useState(false);
 
   const handleHover = () => {

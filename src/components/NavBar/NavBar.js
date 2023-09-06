@@ -1,10 +1,10 @@
 import "./NavBar.module.scss";
 import { useState } from "react";
-import DepListNavBar from "./DepListNavBar/DepListNavBar";
-import Hamburger from "./Hamburger/Hamburger";
-import HamMenu from "./HamMenu/HamMenu";
+import DepListNavBar from "../DepListNavBar/DepListNavBar";
+import Hamburger from "../Hamburger/Hamburger";
+import HamMenu from "../HamMenu/HamMenu";
 
-export default function App() {
+export default function NavBar() {
   const [drop, setDrop] = useState(false);
 
   const handleHover = () => {

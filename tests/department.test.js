@@ -1,8 +1,8 @@
 const request = require('supertest')
 const mongoose = require('mongoose')
 const { MongoMemoryServer } = require('mongodb-memory-server')
-const app = require('../app')
-const server = app.listen(8080, () => console.log(`8080 Fly you fools`))
+const app = require('../app-server')
+const server = app.listen(8020, () => console.log(`8020 DEPARTMENT TEST`))
 const Department = require('../models/department')
 let mongoServer
 
